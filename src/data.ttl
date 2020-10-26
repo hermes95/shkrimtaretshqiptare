@@ -1,0 +1,49 @@
+@prefix : <https://shkrimtaretshqiptare.herokuapp.com/termat#>.
+@prefix shkrimtaret: <https://shkrimtaretshqiptare.herokuapp.com/shkrimtaret#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1>.
+@prefix schema: <http://schema.org/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+
+shkrimtaret:gjegjfishta a :shkrimtar;
+		:gjini :mashkull;
+		:emri "Gjergj"^^xsd:string;
+		:mbiemri "Fishta"^^xsd:string;
+		:datelindja "1871-10-23"^^xsd:date;
+		:dataEVdekjes "1940-12-30"^^xsd:date;
+		:kaShkruar "Lahuta e Malcis"^^xsd:string;
+		:kaShkruar "Anzat e Parnasit"^^xsd:string;
+		:kaShkruar "Vallja e Parrizit"^^xsd:string;
+		:kaShkruar "Shqiptari i qytetnuem"^^xsd:string;
+		:kaShkruar "Gomari i Babatasit"^^xsd:string;
+		:kaShkruar "Mrizi i Zanave"^^xsd:string.
+
+shkrimtaret:driteroagolli a :shkrimtar;
+		:gjini :mashkull;
+		:emri "Dritero"^^xsd:string;
+		:mbiemri "Agolli"^^xsd:string;
+		:datelindja "1931-10-13"^^xsd:date;
+		:dataEVdekjes "2017-02-03"^^xsd:date;
+		:kaShkruar "Hapat e mia ne asfalt"^^xsd:string;
+		:kaShkruar "Zhurma e ererave te dikurshme"^^xsd:string;
+		:kaShkruar "Shkelqimi dhe renia e shokut Zylo"^^xsd:string;
+		:kaShkruar "Njeriu me top"^^xsd:string;
+		:kaShkruar "I perndjekuri i dashurise"^^xsd:string;
+		:kaShkruar "Kaloresi lakuriq"^^xsd:string.
+
+shkrimtaret:naimfrasheri a :shkrimtar;
+		:gjini :mashkull;
+		:emri "Naim"^^xsd:string;
+		:mbiemri "Frasheri"^^xsd:string;
+		:datelindja "1846-05-25"^^xsd:date;
+		:dataEVdekjes "1900-10-20"^^xsd:date;
+		:kaShkruar "Bageti e Bujqesia"^^xsd:string;
+		:kaShkruar "Vjersha per mesonjtoret e para"^^xsd:string;
+		:kaShkruar "Histori e pergjithshme"^^xsd:string;
+		:kaShkruar "Lulet e veres"^^xsd:string;
+		:kaShkruar "Historia e Shqiperise"^^xsd:string;
+		:kaShkruar "Enderrimet"^^xsd:string.

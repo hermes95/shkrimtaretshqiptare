@@ -1,0 +1,89 @@
+@prefix : <https://shkrimtaretshqiptare.herokuapp.com/termat#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1>.
+@prefix schema: <http://schema.org/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+
+<https://shkrimtaretshqiptare.herokuapp.com/termat#> a owl:Ontology.
+
+#klasat
+:shkrimtar a owl:Class;
+	rdfs:label "Shkrimtar"@sq;
+	rdfs:comment "Nje person i cili ka shkruar dicka ose shkruan ne menyre te vecante"@sq;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	rdfs:subClassOf foaf:Person;
+	owl:sameAs dbo:Writer.
+
+:gjini a owl:Class;
+	rdfs:label "Gjini"@sq;
+	rdfs:comment "Klasa e gjinive";
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	owl:sameAs schema:GenderType.
+
+#Vecorite
+:emri a owl:DatatypeProperty;
+	rdfs:label "Emri"@sq;
+	rdfs:comment "Emri i nje personi"@sq;
+	rdfs:domain :shkrimtar;
+	rdfs:range xsd:string;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	owl:sameAs foaf:firstName.
+
+:mbiemri a owl:DatatypeProperty;
+	rdfs:label "Mbiemri"@sq;
+	rdfs:comment "Mbiemri i nje personi"@sq;
+	rdfs:domain :shkrimtar;
+	rdfs:range xsd:string;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	owl:sameAs foaf:familyName.
+
+:gjinia a owl:ObjectProperty;
+	rdfs:label "Gjinia"@sq;
+	rdfs:comment "Vecori per te pershkruar gjinine e nje personi"@sq;
+	rdfs:domain foaf:Person;
+	rdfs:range :gjini;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	owl:sameAs schema:gender.
+
+:datelindja a owl:DatatypeProperty;
+	rdfs:label "Datelindja"@sq;
+	rdfs:comment "Datelindja e nje personi"@sq;
+	rdfs:domain foaf:Person;
+	rdfs:range xsd:date;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	owl:sameAs schema:birthDate.
+
+:dataEVdekjes a owl:DatatypeProperty;
+	rdfs:label "DataEVdekjes"@sq;
+	rdfs:comment "Data e vdekjes se nje shkrimtari"@sq;
+	rdfs:domain foaf:Person;
+	rdfs:range xsd:date;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
+	owl:sameAs schema:deathDate.
+
+:kaShkruar a owl:DatatypeProperty;
+	rdfs:label "KaShkruar"@sq;
+	rdfs:comment "Vecori e cila percakton punen e nje shkrimtari"@sq;
+	rdfs:domain :shkrimtar;
+	rdfs:range xsd:string;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>.
+
+
+#Instancat
+:mashkull a :gjini;
+	rdfs:label "Mashkull"@sq;
+	rdfs:comment "Gjinia mashkull"@sq;
+	rdfs:isDefinedBy <https://shkrimtaretShqiptare.herokuapp.com/termat#>;
+	owl:sameAs schema:Male;
+	owl:differentFrom :femer.
+
+:femer a owl:Class;
+	rdfs:label "Femer"@sq;
+	rdfs:comment "Gjinia femer"@sq;
+	rdfs:isDefinedBy <https://shkrimtaretShqiptare.herokuapp.com/termat#>;
+	owl:sameAs schema:Female;
+	owl:differentFrom :mashkull.
