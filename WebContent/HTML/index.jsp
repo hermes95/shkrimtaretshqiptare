@@ -23,7 +23,10 @@
 </header>
 <main>
 <h1 class="text-center h4">Aplikacion i Web-it Semantik</h1>
-<img src="<%= request.getContextPath()%>/../img/skema.png" />
+<section>
+	<h2 class="text-center h5">Grafi i te dhenave</h2>
+	<img src="<%=request.getContextPath() %>/img/skema.png" alt="Grafi i te dhenave"/>
+</section>
 </main>
 
 <!-- Footer  -->
