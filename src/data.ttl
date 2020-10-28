@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 
-shkrimtaret:gjegjfishta a :shkrimtar;
+shkrimtaret:gjergjfishta a :shkrimtar;
 		:gjini :mashkull;
 		:emri "Gjergj"^^xsd:string;
 		:mbiemri "Fishta"^^xsd:string;

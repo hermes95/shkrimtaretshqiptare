@@ -77,13 +77,13 @@
 :mashkull a :gjini;
 	rdfs:label "Mashkull"@sq;
 	rdfs:comment "Gjinia mashkull"@sq;
-	rdfs:isDefinedBy <https://shkrimtaretShqiptare.herokuapp.com/termat#>;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
 	owl:sameAs schema:Male;
 	owl:differentFrom :femer.
 
 :femer a owl:Class;
 	rdfs:label "Femer"@sq;
 	rdfs:comment "Gjinia femer"@sq;
-	rdfs:isDefinedBy <https://shkrimtaretShqiptare.herokuapp.com/termat#>;
+	rdfs:isDefinedBy <https://shkrimtaretshqiptare.herokuapp.com/termat#>;
 	owl:sameAs schema:Female;
 	owl:differentFrom :mashkull.
