@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
        <li class="nav-item">
-        <a class="nav-link" href="Kryefaqja">Kryefajqa</a>
+        <a class="nav-link" href="Kryefaqja">Kryefaqja</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="shkrimtaret">Shkrimtaret</a>
